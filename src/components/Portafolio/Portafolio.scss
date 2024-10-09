@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+@media (min-width: 801px) {
+
+    .portafolio-container{
+        height: 100%;
+        background-color: rgb(31, 23, 68);
+
+        section{
+
+            margin-left: 2em;
+
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: rgb(107, 185, 209);
+                font-family: "Roboto Condensed", sans-serif;
+
+                .perfilProfesional-titulo-container{
+                    display: flex;
+                    color: rgb(204, 78, 221);
+                    margin: 2em 0em;
+
+                    h3{
+                        width: 100%;
+                        font-weight: 700;
+                        font-size: 40px;
+                        font-family: "Roboto Condensed", sans-serif;
+                    }
+                }
+
+                hr{
+                    color: white;
+                    margin-right: 2em;
+                }
+
+                .perfilProfesional-proyectos-container{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-evenly;
+                    margin:4em 0;
+
+                    article{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        background-image: linear-gradient(to bottom right, rgba(43, 28, 83, 0.973), rgba(67, 51, 109, 0.973) );
+                        width: 27%;
+                        border-radius: 1em;
+                        margin-right: 20px;
+                        border: none;
+
+                        &:hover{
+                            transition: all 200ms ease-out;
+                            transform: scale(1.1);
+                            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.87);
+                            background-image: linear-gradient(to bottom right, rgba(67, 51, 109, 0.973), rgba(43, 28, 83, 0.973) );
+                        }
+
+                        a{
+
+                            font-family: "Roboto Condensed", sans-serif;
+                            text-decoration: none;
+
+                            img{
+                                padding: 1em;
+                                border-radius: 1.5em;
+                                align-content: center;
+                            }
+        
+                            h4{
+                                color: rgb(204, 78, 221);
+                                font-size: 16px;
+                                font-weight: 700;
+                                margin: 15px 10px;
+                            }
+        
+                            p{
+                                margin: 0px 10px;
+                                font-size: 14px;
+                                padding: 1em 0em;
+                                color: rgb(107, 185, 209);
+                                font-weight: 600;
+                            }
+        
+                            h5{
+                                font-size: 14px;
+                                margin: 15px 0px;
+                                text-align: center;
+                                color: rgb(204, 78, 221);
+                                font-weight: 700;
+                            }
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}

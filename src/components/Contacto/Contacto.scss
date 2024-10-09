@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@media (min-width: 801px) {
+    
+    .contactos-container{
+        background-color: rgb(31, 23, 68);
+        height: 643px;
+
+        section{
+
+            margin-left: 2em;
+
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: rgb(107, 185, 209);
+                font-family: "Roboto Condensed", sans-serif;
+
+                .contactos-titulo-container{
+
+                    h3{
+                        color: rgb(206, 92, 221);
+                        font-weight: 700;
+                        font-size: 40px;
+                        margin: 2em 0em 1em 0em;
+                    }
+                }
+
+                hr{
+                    color: white;
+                    margin-right: 2em;
+                }
+
+                .contactos-lista-container{
+                    display: flex;
+                    flex-direction: column;
+                    margin: 3em 0em;
+
+                    div{
+
+                        a{
+                            font-weight: 600;
+                            color:rgb(107, 185, 209);
+                            font-size: 17px ;
+                            text-decoration: none;
+                            margin-left: 2em;
+                        }
+                    }
+                }
+
+                .contactos-herramientas-container{
+                    display: flex;
+                    flex-direction: column;
+
+                    h5{
+                        font-weight: 700;
+                        color: rgb(206, 92, 221);
+                        font-size: 20px;
+                        margin-bottom: 2em;
+                    }
+
+                    div{   
+                            
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        width: 50%;
+
+                        .HTML, .SASS, .JS, .REACT, .BOOTSTRAP{
+                            width: 20%;
+
+                            p{
+                                font-weight: 600;
+                                font-size: 14px;
+                                width: 5em;
+                                text-align: center;
+                                color: white;
+                                background-color: black;
+                            }
+
+                        }
+
+                        .SASS p{
+                            border: 3px solid rgb(204, 88, 233);
+                        }
+
+                        .HTML p{
+                            border: 3px solid rgb(255, 123, 0);
+                        }
+
+                        .JS p{
+                            border: 3px solid rgb(238, 255, 0);
+                        }
+                        
+                        .REACT p{
+                            border: 3px solid rgb(0, 174, 255);
+                        }
+
+                        .BOOTSTRAP p{
+                            width: 8em;
+                            border: 3px solid rgb(111, 0, 255);
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+
+}

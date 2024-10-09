@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@media (min-width: 801px) {
+    
+
+    .educacion-container{
+        background-color: rgb(31, 23, 68);
+
+
+        section{
+            
+            margin-left: 2em ;
+
+            .educacion-titulo-container{
+                padding: 2em 0em;
+
+                h3{
+                    color: rgb(206, 92, 221);
+                    font-size: 40px;
+                    font-weight: 700;
+                    
+                    font-family: "Roboto Condensed", sans-serif;
+                }
+            }
+
+            hr{
+                color: white;
+                margin-right: 2em;
+            }
+
+            div{
+
+                .educacion-certificado-container-BACKEND{
+                    padding-bottom: 2em ;
+                }
+                
+                .educacion-certificado-container, .educacion-certificado-container-BACKEND{
+
+                    margin-top: 2em;
+                    .certificado-titulo-container{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        color: rgb(206, 92, 221);
+                        font-weight: 600;
+
+                        h3{
+                            font-size: 23px;
+                            font-weight: 700;
+                            font-family: "Roboto Condensed", sans-serif;
+                        }
+
+                        p{
+                            margin-right: 0.5em;
+                            font-family: "Roboto Condensed", sans-serif;
+                        }
+                    }
+
+                    .certificado-parrafo-container{
+                        font-size: 15px;
+                        color: rgb(107, 185, 209);
+                        font-weight: 400;
+
+                        font-family: "Roboto Condensed", sans-serif;
+                    }
+
+                    .certificado-enTramite-container{
+
+                        p{
+                            display: table;
+                            color: rgba(201, 159, 24, 0.986);
+                            font-weight: 700;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            position: relative;
+                            font-family: "Roboto Condensed", sans-serif;
+
+                            span{
+                                position: absolute;
+                                right: 0;
+                                width: 0;
+                                background-color: rgb(31, 23, 68);
+                                border-left: 1px solid white;
+
+                                animation: maquinaCertificadoEnTramite 3s infinite alternate steps(20);
+
+                            }
+
+                            @keyframes maquinaCertificadoEnTramite{
+                                from{
+                                    width: 100%;
+                                }
+                                to{
+                                    width: 0;
+                                }
+                            }
+                        }
+                    }
+
+                    .certificado-btn-container{
+
+                        button{
+
+                            background-color: rgba(32, 231, 188, 0.986);
+                            border: none;
+                            margin-left: 0em;
+                            padding: 0.7em 1em;
+                            border-radius: 0.8em;
+                            
+
+                            &:hover{
+                                background-color: rgb(206, 92, 221);
+                            }
+
+                            a{
+                                font-size: 16px;
+                                font-weight: 600;
+                                text-decoration: none;
+                                color: rgb(31, 23, 68);
+                                
+                                font-family: "Roboto Condensed", sans-serif;
+                            }
+                        }
+                        
+                    }
+
+                }
+            }
+        }
+    }
+}

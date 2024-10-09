@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@media (min-width: 801px){
+
+
+    .aboutMe-container{
+        background-color: rgb(31, 23, 68);
+        height: 100%;
+
+        section{
+
+            margin-left: 2em;
+
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                color: rgb(107, 185, 209);
+                font-family: "Roboto Condensed", sans-serif;
+
+                .titulo-container{
+                    display: flex;
+                    flex-direction: row;
+                    padding-top: 3em;
+
+                    .titulo-nombre-container{
+                        color: rgb(204, 78, 221);
+                        font-size: 60px;
+                        font-weight: 700;
+                        width: 30%;
+                    }
+
+                    .titulo-apellido-container{
+                        color: rgba(32, 231, 188, 0.986);
+                        font-size: 60px;
+                        font-weight: 700;
+                    }
+                }
+
+                hr{
+                    color: white;
+                    margin-right: 2em;
+                }
+
+                .parrafos-container{
+                    padding-top: 2.5em;
+                    .p1-container{
+                        width: 41%;
+                        display: table;
+                        color: rgba(201, 159, 24, 0.986);
+                        font-weight: 700;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        position: relative;
+
+                        span{
+                            position: absolute;
+                            right: 0;
+                            width: 0;
+                            background-color: rgb(31, 23, 68);
+                            border-left: 1px solid #fffafa;
+                            animation: maquina 5s infinite alternate steps(55);
+                            
+                        }
+
+                        @keyframes maquina{
+                            from{
+                                width: 100%;
+                            }
+                            to{
+                                width: 0%;
+                            }
+                        }                  
+
+                    }
+
+                    .p2-container{
+                        font-size: 18px;
+                    }
+
+                    .p3-container{
+                        font-size: 15px;
+                    }
+                }
+
+                .contactos-container{
+                    height: 25%;
+
+                    .contactos-email-container{
+                        display: flex;
+                        flex-direction: row;
+                        height: 25%;
+                        font-size: 16px;
+                        
+
+                        .contactos-parrafo-container {
+                            
+                            width: 37%;
+                            height: 25%;
+                            
+                            a{
+                                color: rgb(107, 185, 209);
+                            }
+                        }
+
+                        .contactos-link-container 
+                        {
+                            
+                            height: 25%;
+                            a{
+                                font-weight: 600;
+                                text-decoration: none;
+                                color: rgba(32, 231, 188, 0.986); 
+                            }
+                        }
+                    }
+
+                }
+
+                .btn-downloadCV{
+                    
+                    width: 50%;
+
+                    button{
+                        background-color: rgb(204, 78, 221);
+                        border: none;
+                        border-radius: 15px;
+                        padding: 1em 0em;
+                        margin: 1em 0em 0.8em 0em;
+                        width: 30%;
+
+                        &:hover{
+                            background-color: rgba(32, 231, 188, 0.986);
+                            border-color: rgba(32, 231, 188, 0.986);
+                        }
+
+                        a{
+                            color: rgb(31, 23, 68);
+                            font-size: 15px;
+                            font-weight: 600;
+                            text-decoration: none;
+                        }
+                    }
+                }
+
+                .svg-container{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    padding: 2em 1em;
+
+                    svg{
+                        margin-right: 2em;
+                        color: rgba(32, 231, 188, 0.986); 
+                    }
+                }
+            }
+        }
+    }
+
+}
